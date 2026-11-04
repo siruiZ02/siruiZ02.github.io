@@ -1,0 +1,20 @@
+# ============================================================
+#  Mentorship 名单。每个人是以 "- name:" 开头的一块，复制一块改内容即可。
+#  · status: current 显示在 Current 下，past 显示在 Past 下
+#  · url、program、now 没有就删掉那一行
+#  · 缩进只用空格，不要用 Tab
+# ============================================================
+
+- name: Student Name
+  status: current
+  period: 2026–
+  program: Master student, Some University
+  topic: "Working on web agent evaluation"
+  url: https://example.com
+
+- name: Another Student
+  status: past
+  period: 2025–2026
+  program: Undergraduate intern
+  topic: "Built a benchmark for browser agents"
+  now: PhD student at Some University
