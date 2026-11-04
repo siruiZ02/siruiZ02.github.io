@@ -3,8 +3,8 @@
 #  改完这个文件后，GitHub 需要 1~2 分钟重新生成网站
 # ============================================================
 
-title: Sirui Li                       # 浏览器标签页上显示的标题
-description: PhD student working on AI agents.
+title: Congcong Miao                       # 浏览器标签页上显示的标题
+description: 
 
 # 部署地址：把 your-username 换成你的 GitHub 用户名
 url: "https://siruiz02.github.io"
@@ -12,18 +12,18 @@ baseurl: ""                           # 保持为空，不要删掉这一行
 
 # ---------------- 个人信息（首页左上的名片） ----------------
 author:
-  name: Sirui Li                      # 论文作者列表里会自动把这个名字加粗
-  role: PhD Student                   # 名字下面那行斜体
+  name: Congcong Miao                      # 论文作者列表里会自动把这个名字加粗
+  role:                   # 名字下面那行斜体
   photo: /assets/img/photo.jpg        # 把你的照片放到 assets/img/photo.jpg
-  initials: SL                        # 没放照片时圆圈里显示的字母
+  initials: CM                        # 没放照片时圆圈里显示的字母
 
 # 名片里那一列带图标的链接。不要的整行删掉；想加就照格式复制一行。
 # icon 用的是 Font Awesome 6 的图标名：https://fontawesome.com/search?o=r&m=free
 contact:
   - icon: fa-solid fa-location-dot
-    text: KAIST, Seoul, Korea
+    text: 
   - icon: fa-solid fa-envelope
-    text: siruili@kaist.ac.kr
+    text: congcongmiao@163.com
     url: mailto:siruili@kaist.ac.kr
   - icon: fa-brands fa-github
     text: GitHub
