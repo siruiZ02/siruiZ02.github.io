@@ -1,0 +1,8 @@
+# 新闻：最新的写在最上面。text 里可以用 Markdown 链接 [文字](网址)
+# 首页最多显示几条在 _config.yml 的 news_limit 里改
+
+- date: Nov 2026
+  text: "Gave a talk on [a paper I like](#)."
+
+- date: Sep 2026
+  text: "Started my PhD."

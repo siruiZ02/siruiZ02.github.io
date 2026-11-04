@@ -1,0 +1,32 @@
+# ============================================================
+#  论文列表。每篇论文是以 "- title:" 开头的一块，复制一块改内容即可。
+#  · authors 里写你自己的名字（和 _config.yml 里 author.name 一致）会自动加粗
+#  · selected: true 的论文会出现在首页 Selected Publications
+#  · pdf / slides 可以是网址，也可以是放在 assets/pdf/ 里的文件，例如 /assets/pdf/paper.pdf
+#  · 没有的字段（video、code、award……）直接删掉那一行
+#  · 注意缩进：每块里的字段前面都是两个空格，不要用 Tab
+# ============================================================
+
+- title: "Your Paper Title Goes Here"
+  authors: "Sirui Li, Coauthor One, and Your Advisor"
+  venue: "Under submission"
+  year: 2026
+  selected: true
+  pdf: https://arxiv.org/
+  code: https://github.com/
+
+- title: "Another Paper With a Slightly Longer Title to Show How Wrapping Looks"
+  authors: "Coauthor One, Sirui Li, and Coauthor Two"
+  venue: "Workshop @ Conference '26"
+  year: 2026
+  selected: true
+  pdf: https://arxiv.org/
+  slides: https://example.com/
+  video: https://www.youtube.com/
+  award: Best Paper Award
+
+- title: "An Older Paper Example"
+  authors: "Sirui Li and Coauthor One"
+  venue: "Some Conference '25"
+  year: 2025
+  pdf: https://arxiv.org/

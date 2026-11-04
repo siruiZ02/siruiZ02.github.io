@@ -1,0 +1,10 @@
+# 报告 / 分享：最新的写在最上面。url 和 slides 没有就删掉那行
+
+- date: Nov 2026
+  title: "Talk Title Goes Here"
+  venue: "Group seminar, Some University"
+  slides: /assets/pdf/talk-slides.pdf
+
+- date: Oct 2026
+  title: "Paper Reading: Another Paper Title"
+  venue: "Reading group"

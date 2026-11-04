@@ -1,0 +1,20 @@
+---
+layout: page
+title: Talks
+permalink: /talks/
+---
+
+<!-- 报告列表在 _data/talks.yml 里加，这个页面会自动显示。 -->
+
+<ul class="news talks">
+{% for t in site.data.talks %}
+  <li>
+    <span class="date">{{ t.date }}</span>
+    <span>
+      {% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}<br>
+      <span class="venue">{{ t.venue }}</span>
+      {% if t.slides %} · <a class="inline-link" href="{{ t.slides | relative_url }}"><i class="fa-solid fa-chalkboard-user"></i>Slides</a>{% endif %}
+    </span>
+  </li>
+{% endfor %}
+</ul>

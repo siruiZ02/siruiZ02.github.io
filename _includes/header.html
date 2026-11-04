@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <nav>
+      {% for item in site.nav %}
+        {% assign is_active = false %}
+        {% if item.url == "/" %}
+          {% if page.url == "/" or page.url == "/index.html" %}{% assign is_active = true %}{% endif %}
+        {% elsif page.url contains item.url %}
+          {% assign is_active = true %}
+        {% endif %}
+        <a href="{{ item.url | relative_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode"><i class="fa-regular fa-moon"></i></button>
+    </nav>
+  </div>
+</header>

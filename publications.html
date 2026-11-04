@@ -1,0 +1,15 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+<!-- 这个页面会自动按年份列出 _data/publications.yml 里的所有论文，一般不用改。 -->
+
+{% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+{% for group in by_year %}
+<h2 class="year">{{ group.name }}</h2>
+{% for pub in group.items %}
+  {% include pub.html pub=pub %}
+{% endfor %}
+{% endfor %}

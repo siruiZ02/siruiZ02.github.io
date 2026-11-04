@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<section class="profile">
+  <div class="avatar">
+    {{ site.author.initials }}
+    <img src="{{ site.author.photo | relative_url }}" alt="Photo of {{ site.author.name }}" onerror="this.remove()">
+  </div>
+  <div class="card">
+    <p class="name">{{ site.author.name }}</p>
+    <p class="role">{{ site.author.role }}</p>
+    <ul>
+      {% for c in site.contact %}
+      <li><i class="{{ c.icon }}"></i>{% if c.url %}<a href="{{ c.url }}">{{ c.text }}</a>{% else %}<span>{{ c.text }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<h1>{{ site.author.name }}</h1>
+
+<div class="prose">
+  {{ content }}
+</div>
+
+{% if site.data.news and site.data.news.size > 0 %}
+<h2>News</h2>
+<ul class="news">
+  {% for n in site.data.news limit: site.news_limit %}
+  <li><span class="date">{{ n.date }}</span><span>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% assign selected = site.data.publications | where: "selected", true %}
+{% if selected.size > 0 %}
+<h2>Selected Publications</h2>
+{% for pub in selected %}
+  {% include pub.html pub=pub %}
+{% endfor %}
+<p class="more"><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+{% endif %}

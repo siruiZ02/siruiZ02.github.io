@@ -1,0 +1,21 @@
+{%- comment -%}
+  渲染一篇论文。数据来自 _data/publications.yml，一般不用改这个文件。
+{%- endcomment -%}
+{%- assign me = site.author.name -%}
+{%- capture me_bold -%}<b>{{ me }}</b>{%- endcapture -%}
+<div class="pub">
+  <span class="title">{% if include.pub.url %}<a href="{{ include.pub.url }}">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}</span>
+  {%- if include.pub.pdf or include.pub.slides or include.pub.video or include.pub.code or include.pub.website %}
+  <span class="links">
+    {% if include.pub.pdf %}<a href="{{ include.pub.pdf | relative_url }}"><i class="fa-regular fa-file-lines"></i>PDF</a>{% endif %}
+    {% if include.pub.slides %}<a href="{{ include.pub.slides | relative_url }}"><i class="fa-solid fa-chalkboard-user"></i>Slides</a>{% endif %}
+    {% if include.pub.video %}<a href="{{ include.pub.video }}"><i class="fa-regular fa-circle-play"></i>Video</a>{% endif %}
+    {% if include.pub.code %}<a href="{{ include.pub.code }}"><i class="fa-brands fa-github"></i>Code</a>{% endif %}
+    {% if include.pub.website %}<a href="{{ include.pub.website }}"><i class="fa-solid fa-globe"></i>Website</a>{% endif %}
+  </span>
+  {%- endif %}
+  <br>
+  <span class="authors">{{ include.pub.authors | replace: me, me_bold }}</span><br>
+  <span class="venue">{{ include.pub.venue }}</span>
+  {%- if include.pub.award %}<br><span class="award"><i class="fa-solid fa-award"></i>{{ include.pub.award }}</span>{% endif %}
+</div>
