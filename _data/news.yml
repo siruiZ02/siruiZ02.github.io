@@ -1,45 +1,8 @@
-<div class="news">
-  <h2><strong>News</strong></h2>
-  {% if site.news != blank -%}
-  <div class="table-responsive">
-    <table class="table table-sm table-borderless">
-      {%- assign news = site.news | reverse -%}
-      {% for item in news limit: site.news_limit %}
-      <tr>
-        <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-        <td>
-          {% if item.inline -%}
-          {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-          {%- else -%}
-          <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-          {%- endif %}
-        </td>
-      </tr>
-      {%- endfor %}
-    </table>
-  </div>
-  {%- else -%}
-  <!-- <p>No news so far...</p> -->
-  <div style="background-color: #e4c2f68b;">
-  <ul>
-    <li><time datetime="2026-01"><i>2026.10:</i></time> <strong>(Paper)</strong> GenServe accepted to PPoPP'27. Congratulations!</li>
-    <li><time datetime="2026-01"><i>2026.07:</i></time> <strong>(Paper)</strong> SkyRDMA and AuroraRL accepted to NSDI'27. Congratulations!</li>
-    <li><time datetime="2026-01"><i>2026.05:</i></time> <strong>(Paper)</strong> Turbo, XFir, CubeTrace, and Dorado accepted to SIGCOMM'26. Congratulations!</li>
-    <li><time datetime="2026-01"><i>2026.01:</i></time> <strong>(Paper)</strong> ECOTE accepted to Eurosys'26. Congratulations!</li>
-    <li><time datetime="2025-12"><i>2025.12:</i></time> <strong>(Service)</strong> I'll serve on the PC for SIGCOMM'26. Please consider to submit!</li>
-    <li><time datetime="2025-12"><i>2025.12:</i></time> <strong>(Paper)</strong> BLADE, MirSwitch, Janus, and Canopy accepted to NSDI'26. Congratulations!</li>
-    <li><time datetime="2025-07"><i>2025.08:</i></time> <strong>(Paper)</strong> MPCCS accepted to Eurosys'26. Congratulations!</li>
-    <li><time datetime="2025-07"><i>2025.07:</i></time> <strong>(Paper)</strong> PreTE accepted to SIGCOMM'25. Congratulations!</li>
-    <li><time datetime="2025-07"><i>2025.07:</i></time> <strong>(Paper)</strong> MirrorNet and LADR accepted to NSDI'26. Congratulations!</li>
-    <li><time datetime="2025-06"><i>2025.06:</i></time> <strong>(Paper)</strong> Ares accepted to SECURITY'25. Congratulations!</li>
-    <li><time datetime="2025-04"><i>2025.04:</i></time> <strong>(Paper)</strong> Fornax accepted to SIGCOMM'25. Congratulations!</li>
-    <li><time datetime="2025-04"><i>2025.04:</i></time> <strong>(Service)</strong> I will serve on the PC for SIGCOMM NGNO and FMANO workshop. Please consider to submit!</li>
-    <li><time datetime="2025-01"><i>2025.01:</i></time> <strong>(Service)</strong> I'll serve on the PC for NSDI'26. Please consider to submit!</li>
-    <li><time datetime="2024-12"><i>2024.12:</i></time> <strong>(Paper)</strong> Holmes and P-ECMP accepted to NSDI'25. Congratulations! </li>
-    <li><time datetime="2024-05"><i>2024.05:</i></time> <strong>(Paper)</strong> MegaTE and Turbo accepted to SIGCOMM'24. Congratulations! </li>
-    <li><time datetime="2024-04"><i>2024.04:</i></time> <strong>(Service)</strong> I will serve on the PC for SIGCOMM HotOptics and FMANO workshop. Please consider to submit!</li>
-    <li><time datetime="2024-02"><i>2024.02:</i></time> <strong>(Service)</strong> I'll serve on the PC for NSDI'25. Please consider to submit! </li>
-  </ul>
-</div>
-  {%- endif %}
-</div>
+# 新闻：最新的写在最上面。text 里可以用 Markdown 链接 [文字](网址)
+# 首页最多显示几条在 _config.yml 的 news_limit 里改
+
+- date: Nov 2026
+  text: "Gave a talk on [a paper I like](#)."
+
+- date: Sep 2026
+  text: "Started my PhD."
