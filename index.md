@@ -9,12 +9,7 @@ title: Bio
   首页的 Selected Publications 来自 _data/publications.yml 里标了 selected: true 的论文。
 -->
 
-I am a PhD student working on AI agents, advised by [Prof. Your Advisor](#).
-My research focuses on LLM-based agents that act on the web — how to build
-realistic environments for them, and how to train them to be reliable.
-
-Before my PhD, I worked in software engineering. Replace this paragraph with your
-education, previous institutions, and anything else you want people to know.
+My research aims at building high-performance and reliable networking systems for various cloud applications, such as large language model and big data analytics in the hyper-scale and complex cloud. Towards this vision, my research takes a cross-layer approach to co-design different stacks of the networking system: from hardware and software disaggregation to hardware-software co-design, from optical physical layer to cloud network layer, from mathematical methodology to network system implementation.
 
 I'm always happy to chat about agents, environments, and RL — feel free to
 [reach out](mailto:siruili@kaist.ac.kr).
