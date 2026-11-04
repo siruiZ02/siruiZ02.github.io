@@ -43,12 +43,12 @@ contact:
 nav:
   - title: Bio
     url: /
+  - title: Mentorship
+    url: /mentorship/
   - title: Publications
     url: /publications/
   - title: Talks
     url: /talks/
-  - title: CV
-    url: /assets/pdf/cv.pdf           # 把 CV 放到 assets/pdf/cv.pdf
 
 # 首页 News 最多显示几条（全部新闻写在 _data/news.yml）
 news_limit: 6
