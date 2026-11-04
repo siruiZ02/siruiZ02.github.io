@@ -2,9 +2,16 @@
 layout: default
 ---
 <section class="profile">
-  <div class="avatar">
-    {{ site.author.initials }}
-    <img src="{{ site.author.photo | relative_url }}" alt="Photo of {{ site.author.name }}" onerror="this.remove()">
+  <div class="side">
+    <div class="avatar">
+      {{ site.author.initials }}
+      <img src="{{ site.author.photo | relative_url }}" alt="Photo of {{ site.author.name }}" onerror="this.remove()">
+    </div>
+    <ul class="contact">
+      {% for c in site.contact %}
+      <li><i class="{{ c.icon }}"></i>{% if c.url %}<a href="{{ c.url }}">{{ c.text }}</a>{% else %}<span>{{ c.text }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
   </div>
   <div class="intro">
     <h1>{{ site.author.name }}</h1>
@@ -14,12 +21,6 @@ layout: default
     </div>
   </div>
 </section>
-
-<ul class="contact">
-  {% for c in site.contact %}
-  <li><i class="{{ c.icon }}"></i>{% if c.url %}<a href="{{ c.url }}">{{ c.text }}</a>{% else %}<span>{{ c.text }}</span>{% endif %}</li>
-  {% endfor %}
-</ul>
 
 {% if site.data.news and site.data.news.size > 0 %}
 <h2>News</h2>
