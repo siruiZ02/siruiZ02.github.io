@@ -22,6 +22,15 @@ layout: default
   </div>
 </section>
 
+{% capture highlights %}{% include highlights.md %}{% endcapture %}
+{% assign highlights_text = highlights | strip_html | strip %}
+{% if highlights_text != "" %}
+<h2>Research Highlights</h2>
+<div class="prose highlights">
+  {{ highlights | markdownify }}
+</div>
+{% endif %}
+
 {% if site.data.news and site.data.news.size > 0 %}
 <h2>News</h2>
 <ul class="news">
