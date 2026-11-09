@@ -5,42 +5,23 @@ permalink: /mentorship/
 ---
 
 <style>
-  .mentees li { grid-template-columns: 120px 1fr; }
-  @media (max-width: 680px) { .mentees li { grid-template-columns: 96px 1fr; } }
+  .prose ul.mentees { list-style: none; padding: 0; margin: 0; }
+  .mentees li { margin-bottom: 16px; line-height: 1.6; }
+  .mentees .name { font-weight: 600; }
+  .mentees .degree { color: var(--muted); }
 </style>
 
-<!-- 名单写在 _data/mentorship.yml 里，这个页面会自动显示，一般不用改。 -->
+<!-- 名单写在 _data/mentorship.yml 里，这个页面会自动按分组显示，一般不用改。 -->
 
-{% assign current = site.data.mentorship | where: "status", "current" %}
-{% assign past = site.data.mentorship | where: "status", "past" %}
-
-{% if current.size > 0 %}
-<h2 class="year">Current</h2>
-<ul class="news talks mentees">
-{% for m in current %}
+{% for g in site.data.mentorship %}
+<h2 class="year">{{ g.group }}</h2>
+<ul class="mentees">
+  {% for m in g.students %}
   <li>
-    <span class="date">{{ m.period }}</span>
-    <span>
-      {% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}{% if m.program %}<span class="venue"> · {{ m.program }}</span>{% endif %}<br>
-      {{ m.topic }}
-    </span>
+    {% if m.url %}<a class="name" href="{{ m.url }}">{{ m.name }}</a>{% else %}<span class="name">{{ m.name }}</span>{% endif %}{% if m.degree %} <span class="degree">({{ m.degree }})</span>{% endif %}
+    {% if m.role %}<br>{{ m.role }}{% endif %}
+    {% if m.path %}<br><span class="venue">{{ m.path }}</span>{% endif %}
   </li>
-{% endfor %}
+  {% endfor %}
 </ul>
-{% endif %}
-
-{% if past.size > 0 %}
-<h2 class="year">Past</h2>
-<ul class="news talks mentees">
-{% for m in past %}
-  <li>
-    <span class="date">{{ m.period }}</span>
-    <span>
-      {% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}{% if m.program %}<span class="venue"> · {{ m.program }}</span>{% endif %}<br>
-      {{ m.topic }}
-      {% if m.now %}<br><span class="venue">Now: {{ m.now }}</span>{% endif %}
-    </span>
-  </li>
 {% endfor %}
-</ul>
-{% endif %}
