@@ -23,20 +23,18 @@ contact:
   - icon: fa-solid fa-location-dot
     text: 
   - icon: fa-solid fa-envelope
-    text: congcongmiao@163.com
-    url: mailto:siruili@kaist.ac.kr
+    text: mccmiao@163.com
+    url: mailto:mccmiao@163.com
   - icon: fa-brands fa-github
     text: GitHub
-    url: https://github.com/your-username
+    url: https://github.com/congcongmiao
   - icon: fa-solid fa-graduation-cap
     text: Google Scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?hl=zh-CN&user=MX4DXG0AAAAJ&view_op=list_works&sortby=pubdate
   - icon: fa-brands fa-linkedin-in
     text: LinkedIn
-    url: https://www.linkedin.com/
-  - icon: fa-brands fa-x-twitter
-    text: X / Twitter
-    url: https://x.com/
+    url: https://www.linkedin.com/in/congcong-miao-0a7979109/
+
 
 # ---------------- 顶部导航栏 ----------------
 # 顺序就是显示顺序。新增页面：在根目录建一个 xxx.md，再在这里加一行。
