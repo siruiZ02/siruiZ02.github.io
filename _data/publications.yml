@@ -55,14 +55,19 @@
   selected: true
   image: /assets/img/pubs/p-ecmp.jpg
   venue_url: "https://www.usenix.org/conference/nsdi25/"
+  url: "https://www.usenix.org/conference/nsdi25/presentation/liu-yadong"
+  slides: "https://www.usenix.org/system/files/nsdi25_slides-liu-yadong.pdf"
 
-- title: "Holmes: Localizing lrregularities in LLM Training with Mega-scale GPU Clusters"
+- title: "Holmes: Localizing Irregularities in LLM Training with Mega-scale GPU Clusters"
   authors: "Zhiyi Yao, Pengbo Hu, Congcong Miao, Xuya Jia, Zuning Liang, Yuedong Xu, Chunzhi He, Hao Lu, Mingzhuo Chen, Xiang Li, Zekun He, Yachen Wang, Xianneng Zou, Junchen Jiang"
   venue: "USENIX NSDI 2025"
   year: 2024
   selected: true
   image: /assets/img/pubs/holmes.jpg
   venue_url: "https://www.usenix.org/conference/nsdi25/"
+  url: "https://www.usenix.org/conference/nsdi25/presentation/yao"
+  pdf: "https://www.usenix.org/system/files/nsdi25-yao.pdf"
+  slides: "https://www.usenix.org/system/files/nsdi25_slides-yao.pdf"
 
 - title: "MegaTE: Extending WAN Traffic Engineering to Millions of Endpoints in Virtualized Cloud"
   authors: "Congcong Miao, Zhizhen Zhong, Yunming Xiao, Feng Yang, Senkuo Zhang, Yinan Jiang, Zizhuo Bai, Chaodong Lu, Jingyi Geng, Zekun He, Yachen Wang, Xianneng Zou, Chuanchuan Yang"
@@ -71,6 +76,8 @@
   selected: true
   image: /assets/img/pubs/megate.jpg
   venue_url: "https://conferences.sigcomm.org/sigcomm/2024/"
+  url: "https://doi.org/10.1145/3651890.3672242"
+  pdf: "https://people.csail.mit.edu/zhizhenzhong/papers/2024_SIGCOMM_MegaTE.pdf"
 
 - title: "Turbo: Efficient Communication Framework for Large-scale Data Processing Cluster"
   authors: "Xuya Jia, Zhiyi Yao, Chao Peng, Zihao Zhao, Bin Lei, Edison Liu, Xiang Li, Zekun He, Yachen Wang, Xianneng Zou, Chongqing Zhao, Jinhui Chu, Jilong Wang, Congcong Miao"
@@ -79,6 +86,7 @@
   selected: true
   image: /assets/img/pubs/turbo.jpg
   venue_url: "https://conferences.sigcomm.org/sigcomm/2024/"
+  url: "https://doi.org/10.1145/3651890.3672241"
 
 - title: "TENSOR: Lightweight BGP Non-Stop Routing"
   authors: "Congcong Miao, Yunming Xiao, Marco Canini, Ruiqiang Dai, Shengli Zheng, Jilong Wang, Jiwu Bu, Aleksandar Kuzmanovic, Yachen Wang"
