@@ -1,20 +1,76 @@
 # ============================================================
-#  Mentorship 名单。每个人是以 "- name:" 开头的一块，复制一块改内容即可。
-#  · status: current 显示在 Current 下，past 显示在 Past 下
-#  · url、program、now 没有就删掉那一行
-#  · 缩进只用空格，不要用 Tab
+#  Mentorship 名单，按分组显示。
+#  · 每个分组以 "- group:" 开头，group 是分组标题，students 下面是这一组的人
+#  · 每个人以 "- name:" 开头；degree、role、path、url 都是可选的，没有就不写
+#  · path 显示成灰色斜体的一行，用来写去向，比如 "... → PhD student @ XXX"
+#  · 想加新分组就复制一整块 "- group:"；分组的显示顺序就是这里的顺序
+#  · 缩进只用空格，不要用 Tab；同一层的字段要对齐
 # ============================================================
 
-- name: Student Name
-  status: current
-  period: 2026–
-  program: Master student, Some University
-  topic: "Working on web agent evaluation"
-  url: https://example.com
+- group: "Students (during work experience in Tencent)"
+  students:
+    - name: Sirui Li
+      degree: B.S. in BUPT
+      role: Internship in Tencent
 
-- name: Another Student
-  status: past
-  period: 2025–2026
-  program: Undergraduate intern
-  topic: "Built a benchmark for browser agents"
-  now: PhD student at Some University
+    - name: Yiren Zhao
+      degree: B.S. in University of Toronto
+      role: Internship in Tencent
+
+    - name: Siyuan Chai
+      degree: B.S. in Northwestern University
+      role: Internship in Tencent
+      path: "→ PhD student @ University of Illinois Urbana-Champaign"
+
+    - name: Quan Yuan
+      degree: M.S. in Tsinghua University
+      role: Internship in Tencent
+
+    - name: Chaofan Zhang
+      degree: M.S. in Tsinghua University
+      role: Internship in Tencent
+
+    - name: Lianjin Ye
+      degree: M.S. in Tsinghua University
+      role: "Internship in Tencent (coauthor of NSDI22)"
+
+    - name: Jingyu Xiao
+      degree: M.S. in Tsinghua University
+      role: "Internship in Tencent (coauthor of NSDI22)"
+
+- group: "Students (during PhD experience in Tsinghua University)"
+  students:
+    - name: Weiwei Zhou
+      degree: B.S. in BUPT
+      role: "Research Assistant (coauthor of LCN2018)"
+      path: "Tsinghua University (with Prof. Jilong Wang) → Master student @ University of California San Diego (UCSD) → Youtube (now)"
+
+    - name: Jun Zhang
+      degree: B.S. in BUPT
+      role: "Research Assistant (coauthor of LCN2018)"
+      path: "Tsinghua University (with Prof. Jilong Wang) → Master student @ Aalto University"
+
+    - name: Ziyan Luo
+      degree: B.S. in BUPT
+      role: "Research Assistant (coauthor of WSDM2019) and Bachelor Thesis"
+      path: "Tsinghua University (with Prof. Jilong Wang) → PhD student @ McGill University"
+
+    - name: Fengzhu Zeng
+      degree: B.S. in BUPT
+      role: "Research Assistant (coauthor of WSDM2019) and Bachelor Thesis"
+      path: "Tsinghua University (with Prof. Jilong Wang) → PhD student @ Singapore Management University"
+
+    - name: Jiajun Fu
+      degree: B.S. in BUPT
+      role: "Research Assistant (coauthor of WSDM2020) and Bachelor Thesis"
+      path: "Tsinghua University (with Prof. Jilong Wang) → PhD student @ Simon Fraser University"
+
+    - name: Weichen Zhang
+      degree: B.S. in BUPT
+      role: "Research Assistant (coauthor of AAMAS2020)"
+      path: "Tsinghua University (with Prof. Jilong Wang) → Master student @ Tsinghua University"
+
+    - name: Yeqing Meng
+      degree: B.S. in BUPT
+      role: Research Assistant
+      path: "Tsinghua University (with Prof. Jilong Wang) → Master student @ Tsinghua University"
