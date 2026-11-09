@@ -34,6 +34,9 @@ contact:
   - icon: fa-brands fa-linkedin-in
     text: LinkedIn
     url: https://www.linkedin.com/in/congcong-miao-0a7979109/
+  - icon: fa-solid fa-file-lines
+    text: CV
+    url: /assets/pdf/CV_MCC.pdf
 
 
 # ---------------- 顶部导航栏 ----------------
