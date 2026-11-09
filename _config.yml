@@ -21,7 +21,7 @@ author:
 # icon 用的是 Font Awesome 6 的图标名：https://fontawesome.com/search?o=r&m=free
 contact:
   - icon: fa-solid fa-location-dot
-    text: 
+    text: Beijing
   - icon: fa-solid fa-envelope
     text: mccmiao@163.com
     url: mailto:mccmiao@163.com
