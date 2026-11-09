@@ -41,11 +41,20 @@ layout: default
 </ul>
 {% endif %}
 
+{% if site.data.reviewing and site.data.reviewing.size > 0 %}
+<h2>Reviewing Experiences</h2>
+<ul class="reviewing">
+  {% for r in site.data.reviewing %}
+  <li><span class="role">{{ r.role }}:</span> {{ r.venues }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 {% assign selected = site.data.publications | where: "selected", true %}
 {% if selected.size > 0 %}
-<h2>Selected Publications</h2>
+<h2 class="pubs-heading">Publications <span class="pubs-switch">(<span class="current">Selected</span> | <a href="{{ '/publications/' | relative_url }}">Full List</a>)</span></h2>
 {% for pub in selected %}
-  {% include pub.html pub=pub %}
+  {% include pub.html pub=pub thumb=true %}
 {% endfor %}
-<p class="more"><a href="{{ '/publications/' | relative_url }}">All publications →</a></p>
+<p class="more"><a href="{{ '/publications/' | relative_url }}">Full publication list →</a></p>
 {% endif %}

@@ -1,32 +1,220 @@
 # ============================================================
 #  论文列表。每篇论文是以 "- title:" 开头的一块，复制一块改内容即可。
-#  · authors 里写你自己的名字（和 _config.yml 里 author.name 一致）会自动加粗
+#  · Publications 页面显示全部论文，按 year 分组
 #  · selected: true 的论文会出现在首页 Selected Publications
-#  · pdf / slides 可以是网址，也可以是放在 assets/pdf/ 里的文件，例如 /assets/pdf/paper.pdf
-#  · 没有的字段（video、code、award……）直接删掉那一行
-#  · 注意缩进：每块里的字段前面都是两个空格，不要用 Tab
+#  · image 是首页论文左边的配图，放在 assets/img/pubs/ 里；没有配图就删掉那一行
+#  · authors 里和 _config.yml 中 author.name 一样的名字会自动加粗
+#  · url 是点标题跳转的链接；venue_url 是点会议名跳转的链接
+#  · pdf / slides / video / code / artifact 都是可选的，没有就不写
+#  · 文字一律用双引号包起来；缩进只用空格，不要用 Tab
 # ============================================================
 
-- title: "Your Paper Title Goes Here"
-  authors: "Sirui Li, Coauthor One, and Your Advisor"
-  venue: "Under submission"
-  year: 2026
-  selected: true
-  pdf: https://arxiv.org/
-  code: https://github.com/
-
-- title: "Another Paper With a Slightly Longer Title to Show How Wrapping Looks"
-  authors: "Coauthor One, Sirui Li, and Coauthor Two"
-  venue: "Workshop @ Conference '26"
-  year: 2026
-  selected: true
-  pdf: https://arxiv.org/
-  slides: https://example.com/
-  video: https://www.youtube.com/
-  award: Best Paper Award
-
-- title: "An Older Paper Example"
-  authors: "Sirui Li and Coauthor One"
-  venue: "Some Conference '25"
+- title: "Fornax: A Hardware-Centric Session Management in Large Public Cloud Network"
+  authors: "Heng Yu, Jian Wang, Jian Zhao, Kai Ren, Guozhi Lin, Baozeng Zhang, Yunpeng Guan, Xin Li, Hao Yin, Jiajun Liang, Liang Wang, Chao Pei, Yachen Wang, Xin Jin, Jilong Wang, Congcong Miao"
+  venue: "ACM SIGCOMM 2025"
   year: 2025
-  pdf: https://arxiv.org/
+  selected: true
+  image: /assets/img/pubs/fornax.jpg
+  url: "https://dl.acm.org/doi/abs/10.1145/3718958.3750501"
+  venue_url: "https://conferences.sigcomm.org/sigcomm/2025/"
+
+- title: "PreTE: Predictive Traffic Engineering in WANs"
+  authors: "Congcong Miao, Zhizhen Zhong, Yiren Zhao, Arpit Gupta, Ying Zhang, Sirui Li, Zekun He, Xianneng Zou, Jilong Wang"
+  venue: "ACM SIGCOMM 2025"
+  year: 2025
+  selected: true
+  image: /assets/img/pubs/prete.jpg
+  url: "https://dl.acm.org/doi/10.1145/3718958.3750508"
+  venue_url: "https://conferences.sigcomm.org/sigcomm/2025/"
+
+- title: "Flexnetic: Cost-Effective and Smooth Evolution of Optical Backbone"
+  authors: "Zhiquan Wang, Congcong Miao, Yiren Zhao, Kunling He, Jilong Wang"
+  venue: "2025 34th International Conference on Computer Communications and Networks (ICCCN)"
+  year: 2025
+  url: "https://ieeexplore.ieee.org/abstract/document/11133810"
+  venue_url: "http://icccn.org/ICCCN25/index.html"
+
+- title: "Predictive Configuration on DHCP in WLANs"
+  authors: "Pei Zhang, Yunzhe Wang, Hanyan Yin, Botong Wu, Qi Wang, Xiaohong Huang, Yan Ma, Jilong Wang, Congcong Miao"
+  venue: "IEEE Transactions on Networking"
+  year: 2025
+  url: "https://ieeexplore.ieee.org/abstract/document/11076090"
+  venue_url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=90"
+
+- title: "Ares: Comprehensive Path Hijacking Detection via Routing Tree"
+  authors: "Yinxiang Tao, Chengwan Zhang, Changqing An, Shuying Zhuang, Jilong Wang, Congcong Miao"
+  venue: "USENIX Security 25"
+  year: 2025
+  url: "https://www.usenix.org/conference/usenixsecurity25/presentation/tao"
+  venue_url: "https://www.usenix.org/conference/usenixsecurity25"
+
+- title: "Unlocking ECMP Programmability for Precise Traffic Control"
+  authors: "Yadong Liu, Yunming Xiao, Xuan Zhang, Weizhen Dang, Huihui Liu, XiangLi, Zekun He, Jilong Wang, Aleksandar Kuzmanovic, Ang Chen, Congcong Miao"
+  venue: "USENIX NSDI 2025"
+  year: 2024
+  selected: true
+  image: /assets/img/pubs/p-ecmp.jpg
+  venue_url: "https://www.usenix.org/conference/nsdi25/"
+
+- title: "Holmes: Localizing lrregularities in LLM Training with Mega-scale GPU Clusters"
+  authors: "Zhiyi Yao, Pengbo Hu, Congcong Miao, Xuya Jia, Zuning Liang, Yuedong Xu, Chunzhi He, Hao Lu, Mingzhuo Chen, Xiang Li, Zekun He, Yachen Wang, Xianneng Zou, Junchen Jiang"
+  venue: "USENIX NSDI 2025"
+  year: 2024
+  selected: true
+  image: /assets/img/pubs/holmes.jpg
+  venue_url: "https://www.usenix.org/conference/nsdi25/"
+
+- title: "MegaTE: Extending WAN Traffic Engineering to Millions of Endpoints in Virtualized Cloud"
+  authors: "Congcong Miao, Zhizhen Zhong, Yunming Xiao, Feng Yang, Senkuo Zhang, Yinan Jiang, Zizhuo Bai, Chaodong Lu, Jingyi Geng, Zekun He, Yachen Wang, Xianneng Zou, Chuanchuan Yang"
+  venue: "ACM SIGCOMM 2024"
+  year: 2024
+  selected: true
+  image: /assets/img/pubs/megate.jpg
+  venue_url: "https://conferences.sigcomm.org/sigcomm/2024/"
+
+- title: "Turbo: Efficient Communication Framework for Large-scale Data Processing Cluster"
+  authors: "Xuya Jia, Zhiyi Yao, Chao Peng, Zihao Zhao, Bin Lei, Edison Liu, Xiang Li, Zekun He, Yachen Wang, Xianneng Zou, Chongqing Zhao, Jinhui Chu, Jilong Wang, Congcong Miao"
+  venue: "ACM SIGCOMM 2024"
+  year: 2024
+  selected: true
+  image: /assets/img/pubs/turbo.jpg
+  venue_url: "https://conferences.sigcomm.org/sigcomm/2024/"
+
+- title: "TENSOR: Lightweight BGP Non-Stop Routing"
+  authors: "Congcong Miao, Yunming Xiao, Marco Canini, Ruiqiang Dai, Shengli Zheng, Jilong Wang, Jiwu Bu, Aleksandar Kuzmanovic, Yachen Wang"
+  venue: "ACM SIGCOMM 2023"
+  year: 2023
+  selected: true
+  image: /assets/img/pubs/2023tensor.jpg
+  url: "https://doi.org/10.1145/3603269.3604852"
+  venue_url: "https://conferences.sigcomm.org/sigcomm/2023/"
+  video: "https://www.youtube.com/watch?v=J2eEQwMoQD8"
+  artifact: "https://yunmingxiao.github.io/publication/tensor/"
+
+- title: "FlexWAN: Software Hardware Co-design for Cost-Effective and Resilient Optical Backbones"
+  authors: "Congcong Miao, Zhizhen Zhong, Ying Zhang, Kunling He, Fangchao Li, Minggang Chen, Yiren Zhao, Xiang Li, Zekun He, Xianneng Zou, and Jilong Wang"
+  venue: "ACM SIGCOMM 2023"
+  year: 2023
+  selected: true
+  image: /assets/img/pubs/2023flexwan.jpg
+  url: "https://doi.org/10.1145/3603269.3604824"
+  venue_url: "https://conferences.sigcomm.org/sigcomm/2023/"
+  slides: "https://conferences.sigcomm.org/events/apnet2023//slides/apnet23/Industry/miao_FlexWAN_APNET.pdf"
+  video: "https://www.youtube.com/watch?v=712VsqKW7-k"
+  artifact: "https://github.com/congcongmiao/FlexWAN"
+
+- title: "Metis: Detecting Fake AS-PATHs Based on Link Prediction"
+  authors: "Chengwan Zhang, Congcong Miao, Changqing An, Anlun Hong, Ning Wang, Zhiquan Wang, Jilong Wang"
+  venue: "2023 IEEE Symposium on Computers and Communications (ISCC)"
+  year: 2023
+  url: "https://ieeexplore.ieee.org/abstract/document/10218104/"
+  venue_url: "https://2023.ieee-iscc.org/"
+
+- title: "Serpens: A High Performance FaaS Platform for Network Functions"
+  authors: "Heng Yu, Han Zhang, Junxian Shen, Yantao Geng, Jilong Wang, Congcong Miao and Mingwei Xu"
+  venue: "IEEE Transactions on Parallel and Distributed Systems"
+  year: 2023
+  url: "https://doi.org/10.1109/TPDS.2023.3263272"
+  venue_url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=71"
+
+- title: "Self-supervised representation learning for trip recommendation"
+  authors: "Qiang Gao, Wei Wang, Kunpeng Zhang, Xin Yang, Congcong Miao and Tianrui Li"
+  venue: "Knowledge-Based Systems"
+  year: 2022
+  url: "https://doi.org/10.1016/j.knosys.2022.108791"
+  venue_url: "https://www.sciencedirect.com/journal/knowledge-based-systems"
+
+- title: "Scorpius: Proactive Code Preparation to Accelerate Function Startup"
+  authors: "Heng Yu, Junxian Shen, Han Zhang, Jilong Wang, Congcong Miao and Mingwei Xu"
+  venue: "2022 IEEE/ACM 30th International Symposium on Quality of Service (IWQoS)"
+  year: 2022
+  url: "https://doi.org/10.1109/IWQoS54832.2022.9812868"
+  venue_url: "https://ieeexplore.ieee.org/xpl/conhome/9812862/proceeding"
+
+- title: "RLMob: Deep reinforcement learning for successive mobility prediction"
+  authors: "Ziyan Luo and Congcong Miao"
+  venue: "Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining"
+  year: 2022
+  url: "https://doi.org/10.1145/3488560.3498438"
+  venue_url: "https://www.wsdm-conference.org/2022/"
+
+- title: "Detecting Ephemeral Optical Events with OpTel"
+  authors: "Congcong Miao, Minggang Chen, Arpit Gupta, Zili Meng, Lianjin Ye, Jingyu Xiao, Jie Chen, Zekun He, Xulong Luo, Jilong Wang and Heng Yu"
+  venue: "19th USENIX Symposium on Networked Systems Design and Implementation (NSDI 22)"
+  year: 2022
+  selected: true
+  image: /assets/img/pubs/2021optel.jpg
+  url: "https://www.usenix.org/conference/nsdi22/presentation/miao"
+  venue_url: "https://www.usenix.org/conference/nsdi22"
+  slides: "https://www.usenix.org/system/files/nsdi22_slides_miao.pdf"
+  video: "https://www.youtube.com/watch?v=2UN3GXeu9fw"
+
+- title: "Predicting crowd flows via pyramid dilated deeper spatial-temporal network"
+  authors: "Congcong Miao, Jiajun Fu, Jilong Wang, Heng Yu, Botao Yao, Anqi Zhong, Jie Chen and Zekun He"
+  venue: "Proceedings of the 14th ACM International Conference on Web Search and Data Mining"
+  year: 2021
+  url: "https://doi.org/10.1145/3437963.3441785"
+  venue_url: "https://www.wsdm-conference.org/2021/"
+
+- title: "Octans: Optimal Placement of Service Function Chains in Many-Core Systems"
+  authors: "Heng Yu, Zhilong Zheng, Junxian Shen, Congcong Miao, Chen Sun, Hongxin Hu, Jun Bi, Jianping Wu and Jilong Wang"
+  venue: "IEEE Transactions on Parallel and Distributed Systems"
+  year: 2021
+  url: "https://doi.org/10.1109/TPDS.2021.3063613"
+  venue_url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=71"
+
+- title: "Trajectory-user linking with attentive recurrent network"
+  authors: "Congcong Miao, Jilong Wang, Heng Yu, Weichen Zhang, Yinyao Qi"
+  venue: "Proceedings of the 19th international conference on autonomous agents and multiagent systems"
+  year: 2020
+  url: "https://www.ifaamas.org/Proceedings/aamas2020/pdfs/p878.pdf"
+  venue_url: "https://www.ifaamas.org/Proceedings/aamas2020/"
+
+- title: "Predicting human mobility via attentive convolutional network"
+  authors: "Congcong Miao, Ziyan Luo, Fengzhu Zeng and Jilong Wang"
+  venue: "Proceedings of the 13th International Conference on Web Search and Data Mining"
+  year: 2020
+  url: "https://doi.org/10.1145/3336191.3371846"
+  venue_url: "https://www.wsdm-conference.org/2020/"
+
+- title: "A coordinated view of cyberspace"
+  authors: "Congcong Miao, Jilong Wang, Shuying Zhuang and Changqing An"
+  venue: "arXiv preprint arXiv:1910.09787"
+  year: 2019
+  url: "https://arxiv.org/abs/1910.09787"
+  venue_url: "https://arxiv.org/abs/1910.09787"
+
+- title: "BDAC: A Behavior-aware Dynamic Adaptive Configuration on DHCP in Wireless LANs"
+  authors: "Congcong Miao, Jilong Wang, Tianying Ji, Hui Wang, Chao Xu, Fenghua Li and Fengyuan Ren"
+  venue: "2019 IEEE 27th International Conference on Network Protocols (ICNP)"
+  year: 2019
+  url: "https://doi.org/10.1109/ICNP.2019.8888048"
+  venue_url: "https://ieeexplore.ieee.org/xpl/conhome/8884214/proceeding"
+
+- title: "A multi-dimension measurement study of a large scale campus wifi network"
+  authors: "Congcong Miao, Jilong Wang, Hui Wang, Jun Zhang, Weiwei Zhou, Shengchao Liu"
+  venue: "2018 IEEE 43rd Conference on Local Computer Networks (LCN)"
+  year: 2018
+  url: "https://doi.org/10.1109/LCN.2018.8638246"
+  venue_url: "https://ieeexplore.ieee.org/xpl/conhome/8635823/proceeding"
+
+- title: "Quicksync: Improving synchronization efficiency for mobile cloud storage services"
+  authors: "Yong Cui, Zeqi Lai, Xin Wang, Ningwei Dai and Congcong Miao"
+  venue: "Proceedings of the 21st Annual International Conference on Mobile Computing and Networking"
+  year: 2015
+  url: "https://doi.org/10.1145/2789168.2790094"
+  venue_url: "https://www.sigmobile.org/mobicom/2015/"
+
+- title: "Measuring photoplethysmogram-based stress-induced vascular response index to assess cognitive load and stress"
+  authors: "Yongqiang Lyu, Xiaomin Luo, Jun Zhou, Chun Yu, Congcong Miao, Tong Wang, Yuanchun Shi and Ken-ichi Kameyama"
+  venue: "Proceedings of the 33rd annual ACM conference on human factors in computing systems"
+  year: 2015
+  url: "https://doi.org/10.1145/2702123.2702399"
+  venue_url: "https://chi2015.acm.org/"
+
+- title: "A simple method to improve a torsion pendulum for studying chaos"
+  authors: "Congcong Miao, Wu Luo, Yaqi Ma, Weiqing Liu and Jinghua Xiao"
+  venue: "European Journal of Physics"
+  year: 2014
+  url: "https://iopscience.iop.org/article/10.1088/0143-0807/35/5/055012/meta"
+  venue_url: "https://iopscience.iop.org/journal/0143-0807/"
