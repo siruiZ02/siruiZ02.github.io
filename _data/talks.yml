@@ -1,10 +1,17 @@
 # 报告 / 分享：最新的写在最上面。url 和 slides 没有就删掉那行
 
-- date: Nov 2026
-  title: "Talk Title Goes Here"
-  venue: "Group seminar, Some University"
-  slides: /assets/pdf/talk-slides.pdf
+- date: May 2020
+  title: "Trajectory-User Linking with Attentive Recurrent Network"
+  venue: "International Conference on Autonomous Agents and MultiAgent Systems (AAMAS)"
 
-- date: Oct 2026
-  title: "Paper Reading: Another Paper Title"
-  venue: "Reading group"
+- date: Feb 2020
+  title: "Predicting human mobility via Attentive Convolutional Network"
+  venue: "International Conference on Web Search and Data Mining (WSDM)"
+
+- date: Oct 2019
+  title: "BDAC: A Behavior-aware Dynamic Adaptive Configuration on DHCP in Wireless LANs"
+  venue: "International Conference on Network Protocols (ICNP)"
+
+- date: Oct 2018
+  title: "A Multi-dimension Measurement Study of a Large Scale Campus WiFi Network"
+  venue: "IEEE 43rd Conference on Local Computer Networks (LCN)"
